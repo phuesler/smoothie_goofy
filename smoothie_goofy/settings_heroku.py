@@ -60,7 +60,9 @@ WSGI_APPLICATION = 'smoothie_goofy.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/1.6/ref/settings/#databases
 import dj_database_url
-DATABASES['default'] =  dj_database_url.config()
+DATABASES = {
+    'default': dj_database_url.config()
+}
 
 # Internationalization
 # https://docs.djangoproject.com/en/1.6/topics/i18n/
